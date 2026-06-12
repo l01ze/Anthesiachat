@@ -1,0 +1,25 @@
+name: Deploy from Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download HTML file from latest release
+        uses: dsaltares/fetch-gh-release-asset@master
+        with:
+          repo: ${{ github.repository }}
+          file: '.*\.html?$'  # This regex matches any .html or .htm file
+          token: ${{ secrets.GITHUB_TOKEN }}
+          target: 'website/'  # Downloads to this temporary folder
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: website   # The folder where the HTML file was downloaded
+          branch: gh-pages  # The branch where your site will live
