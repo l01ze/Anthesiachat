@@ -1,11 +1,9 @@
 # Athena · Multi‑Agent AI Studio
 
 A browser‑based, fully client‑side multi‑agent system that lets you create, customise, and orchestrate multiple AI agents (powered by Groq’s Llama 3.3‑70B) with persistent conversations, delegation, memory, message editing, and collapsible reasoning.
-**⚠️ Note ⚠️**
-All historical releases contain a revoked API key. To use them, replace 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 with your own Groq key. Get one free at console.groq.com.
 **Also includes a separate branch:** **Dolphin Uncensored** – a single‑agent chat using the AI Horde (uncensored Dolphin models).
 
-**⚠️ Note ⚠️**
+## ⚠️ Note ⚠️
 All historical releases contain a revoked API key. To use them, replace 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 with your own Groq key. Get one free at console.groq.com.
 **Also includes a separate branch:** **Dolphin Uncensored** – a single‑agent chat using the AI Horde (uncensored Dolphin models).
 <img width="1919" height="998" alt="image" src="https://github.com/user-attachments/assets/88b2c32a-ca25-497f-b550-d57a2ff13258" />
