@@ -3,12 +3,13 @@
 A browser‑based, fully client‑side multi‑agent system that lets you create, customise, and orchestrate multiple AI agents (powered by Groq’s Llama 3.3‑70B) with persistent conversations, delegation, memory, message editing, and collapsible reasoning.
 
 **Also includes a separate branch:** **Dolphin Uncensored** – a single‑agent chat using the AI Horde (uncensored Dolphin models).
-
+<img width="1919" height="998" alt="image" src="https://github.com/user-attachments/assets/88b2c32a-ca25-497f-b550-d57a2ff13258" />
 ---
 
 ## Version History
 
-| Version | Improvements | Advantages | Disadvantages |
+| Version | Improve
+ements | Advantages | Disadvantages |
 |---------|--------------|------------|----------------|
 | **1.0** | Initial multi‑agent system with basic delegation (`[DELEGATE:agent:task]`) and retrieval (`[RETRIEVE:agent:query]`). Streaming responses with `<thinking>` tags. Sidebar with agent list and per‑agent chat sessions. LocalStorage persistence. | Functional foundation; agents can delegate work to each other; code copy buttons; collapsible thinking blocks. | No message editing; no 3‑dot chat menus; delegation sometimes fails to include full code; no custom agent preferences. |
 | **1.1** | Collapsible delegation responses – delegated replies are hidden under a clickable header. | Cleaner chat UI; long delegated responses don’t clutter the view. | Still no way to edit or delete individual messages. |
