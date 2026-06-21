@@ -9,19 +9,17 @@ All historical releases contain a revoked API key. To use them, replace "gsk_xKb
 <img width="1919" height="998" alt="image" src="https://github.com/user-attachments/assets/88b2c32a-ca25-497f-b550-d57a2ff13258" />
 ---
 
-## Version History
+### Version History
 
-| Version | Improve
-ements | Advantages | Disadvantages |
-|---------|--------------|------------|----------------|
+| Version | Improvements | Advantages | Disadvantages |
+| :--- | :--- | :--- | :--- |
 | **1.0** | Initial multi‑agent system with basic delegation (`[DELEGATE:agent:task]`) and retrieval (`[RETRIEVE:agent:query]`). Streaming responses with `<thinking>` tags. Sidebar with agent list and per‑agent chat sessions. LocalStorage persistence. | Functional foundation; agents can delegate work to each other; code copy buttons; collapsible thinking blocks. | No message editing; no 3‑dot chat menus; delegation sometimes fails to include full code; no custom agent preferences. |
 | **1.1** | Collapsible delegation responses – delegated replies are hidden under a clickable header. | Cleaner chat UI; long delegated responses don’t clutter the view. | Still no way to edit or delete individual messages. |
 | **1.2** | Editable agent personalities – each agent gets a custom system prompt and a toggleable “preferences” modal. | Agents can be fine‑tuned on the fly; user‑defined instructions. | Preferences are global per agent, not per chat. |
-| **1.3** | @‑mentions and manual delegation dropdown. You can now type `@Debugger` to delegate directly. | More intuitive delegation; works without relying on the AI to output `[DELEGATE:...]`. | Delegation still lacks a confirmation step. |
+| **1.3** | `@‑mentions` and manual delegation dropdown. You can now type `@Debugger` to delegate directly. | More intuitive delegation; works without relying on the AI to output `[DELEGATE:...]`. | Delegation still lacks a confirmation step. |
 | **1.4** | Multiple chat sessions per agent + shared user memory. Each agent can have several independent conversations; memory (user profile) is extracted automatically from conversations. | Persistent context across chats; agents remember facts about the user. | Memory extraction is basic (key‑value only); no way to edit memory manually. |
-| **1.5** | **Message editing** (pencil icon on user messages) and **3‑dot menus** for chat sessions (rename/delete). Full regeneration after edit. | Complete control over conversation history; edit any user message and the assistant will re‑answer. | Editing does not allow editing assistant messages; no undo for regenerations. |
-| **2.0** | **Dolphin Uncensored** – standalone single‑agent chat using AI Horde (stablehorde.net). No registration, no API key. Supports markdown, code highlighting, copy button, and animated typing indicator. | Truly uncensored; works without any backend; easy to deploy. | Slower (polling based); may time out if Horde workers are busy; no agent delegation. |
-
+| **1.5** | Message editing (pencil icon on user messages) and 3‑dot menus for chat sessions (rename/delete). Full regeneration after edit. | Complete control over conversation history; edit any user message and the assistant will re‑answer. | Editing does not allow editing assistant messages; no undo for regenerations. |
+| **2.0** | Dolphin Uncensored – standalone single‑agent chat using AI Horde (stablehorde.net). No registration, no API key. Supports markdown, code highlighting, copy button, and animated typing indicator. | Truly uncensored; works without any backend; easy to deploy. | Slower (polling based); may time out if Horde workers are busy; no agent delegation. |
 ---
 
 ## Detailed Version Breakdown
